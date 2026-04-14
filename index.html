@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OmniConnect · 融合通信解决方案</title>
+  <meta name="description" content="企业级融合通信平台，覆盖企业短信、语音机器人、邮件群发、WhatsApp、物联网卡、国际漫游流量包" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans+Arabic:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon">🔗</div>
+        <span class="logo-text">Omni<span>Connect</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#products" data-i18n="nav.products">产品</a></li>
+        <li><a href="#ai-agents" data-i18n="nav.ai">AI 智能体</a></li>
+        <li><a href="#why" data-i18n="nav.why">为何选择我们</a></li>
+        <li><a href="#global" data-i18n="nav.global">全球覆盖</a></li>
+        <li><a href="#pricing" data-i18n="nav.pricing">定价</a></li>
+        <li><a href="#testimonials" data-i18n="nav.testimonials">客户案例</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang-switcher">
+          <button class="lang-btn" id="langBtn">
+            <span id="langFlag">🇨🇳</span>
+            <span id="langLabel">中文</span>
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <div class="lang-dropdown">
+            <div class="lang-option active" onclick="switchLang('zh')"><span class="flag">🇨🇳</span> 中文 (简体)</div>
+            <div class="lang-option" onclick="switchLang('en')"><span class="flag">🇺🇸</span> English</div>
+            <div class="lang-option" onclick="switchLang('ar')"><span class="flag">🇸🇦</span> العربية</div>
+          </div>
+        </div>
+        <a href="#contact" class="btn-nav" data-i18n="nav.contact">免费咨询</a>
+      </div>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="mobile-links">
+    <li><a href="#products" onclick="toggleMenu()" data-i18n="nav.products">产品</a></li>
+    <li><a href="#ai-agents" onclick="toggleMenu()" data-i18n="nav.ai">AI 智能体</a></li>
+    <li><a href="#why" onclick="toggleMenu()" data-i18n="nav.why">为何选择我们</a></li>
+    <li><a href="#global" onclick="toggleMenu()" data-i18n="nav.global">全球覆盖</a></li>
+    <li><a href="#pricing" onclick="toggleMenu()" data-i18n="nav.pricing">定价</a></li>
+    <li><a href="#testimonials" onclick="toggleMenu()" data-i18n="nav.testimonials">客户案例</a></li>
+    <li><a href="#contact" onclick="toggleMenu()" data-i18n="nav.contact">免费咨询</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        <span data-i18n="hero.badge">企业级融合通信平台 · 全球可达</span>
+      </div>
+      <h1>
+        <span data-i18n="hero.title1">连接全球，</span><br/>
+        <span class="highlight" data-i18n="hero.title2">智慧驱动每一次沟通</span>
+      </h1>
+      <p class="hero-desc" data-i18n="hero.desc">一站式融合通信解决方案，覆盖企业短信、语音机器人、邮件群发、WhatsApp、物联网卡与国际流量包，助力企业触达全球每一位客户。</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">
+          <span data-i18n="hero.cta1">立即开始免费试用</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#products" class="btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16"/></svg>
+          <span data-i18n="hero.cta2">查看产品演示</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="hero-stat-num">10<span>K</span>+</div><div class="hero-stat-label" data-i18n="hero.stat1">企业客户</div></div>
+        <div class="hero-stat"><div class="hero-stat-num">200<span>+</span></div><div class="hero-stat-label" data-i18n="hero.stat2">覆盖国家和地区</div></div>
+        <div class="hero-stat"><div class="hero-stat-num">99.<span>9%</span></div><div class="hero-stat-label" data-i18n="hero.stat3">服务可用率</div></div>
+        <div class="hero-stat"><div class="hero-stat-num">5<span>B</span>+</div><div class="hero-stat-label" data-i18n="hero.stat4">年消息发送量</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="float-cards-wrap">
+    <div class="float-card fc-1"><div class="float-card-icon" style="background:#EFF6FF">📱</div><div class="float-card-info"><span class="float-card-title">SMS 送达率</span><span class="float-card-value">98.7%</span></div></div>
+    <div class="float-card fc-2"><div class="float-card-icon" style="background:#ECFDF5">🤖</div><div class="float-card-info"><span class="float-card-title">AI 语音机器人</span><span class="float-card-value">24/7 在线</span></div></div>
+    <div class="float-card fc-3"><div class="float-card-icon" style="background:#F5F3FF">💬</div><div class="float-card-info"><span class="float-card-title">WhatsApp BSP</span><span class="float-card-value">官方认证</span></div></div>
+    <div class="float-card fc-4"><div class="float-card-icon" style="background:#FFF7ED">🌍</div><div class="float-card-info"><span class="float-card-title">国际漫游</span><span class="float-card-value">200+ 地区</span></div></div>
+  </div>
+</section>
+
+<!-- LOGOS STRIP -->
+<div class="logos-strip">
+  <div class="container"><p class="logos-label" data-i18n="logos.label">已服务全球领先企业</p></div>
+  <div class="logos-track">
+    <span class="logo-item">🏢 Alibaba Group</span><span class="logo-item">🛒 Shopee</span>
+    <span class="logo-item">🚗 Grab</span><span class="logo-item">💳 Payoneer</span>
+    <span class="logo-item">📦 Lazada</span><span class="logo-item">🏦 Standard Chartered</span>
+    <span class="logo-item">✈️ AirAsia</span><span class="logo-item">🛒 Tokopedia</span>
+    <span class="logo-item">📱 OYO</span><span class="logo-item">🎮 Garena</span>
+    <span class="logo-item">🏢 Alibaba Group</span><span class="logo-item">🛒 Shopee</span>
+    <span class="logo-item">🚗 Grab</span><span class="logo-item">💳 Payoneer</span>
+    <span class="logo-item">📦 Lazada</span><span class="logo-item">🏦 Standard Chartered</span>
+    <span class="logo-item">✈️ AirAsia</span><span class="logo-item">🛒 Tokopedia</span>
+    <span class="logo-item">📱 OYO</span><span class="logo-item">🎮 Garena</span>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag" data-i18n="products.tag">产品矩阵</span>
+      <h2 class="section-title" data-i18n="products.title">覆盖全渠道的通信解决方案</h2>
+      <p class="section-desc" data-i18n="products.desc">六大核心产品，无缝整合，让您的企业在任何渠道、任何国家都能高效触达客户</p>
+    </div>
+    <div class="products-grid">
+      <div class="product-card card-blue reveal">
+        <div class="product-icon-wrap">📱</div>
+        <h3 data-i18n="p.sms.name">企业短信</h3>
+        <p data-i18n="p.sms.desc">全球短信通道，支持验证码、营销推送、交易通知等场景，稳定高速，秒级到达。</p>
+        <ul class="product-features">
+          <li data-i18n="p.sms.f1">OTP 一次性密码验证</li>
+          <li data-i18n="p.sms.f2">营销活动群发</li>
+          <li data-i18n="p.sms.f3">交易状态通知</li>
+          <li data-i18n="p.sms.f4">双向短信互动</li>
+        </ul>
+        <a href="#contact" class="product-link" data-i18n="p.learn">了解详情 →</a>
+      </div>
+      <div class="product-card card-cyan reveal">
+        <div class="product-icon-wrap">🤖</div>
+        <h3 data-i18n="p.voice.name">AI 语音机器人</h3>
+        <p data-i18n="p.voice.desc">基于 AI 的智能语音外呼与接听系统，自动化客服、催收、调研，极大降低人力成本。</p>
+        <ul class="product-features">
+          <li data-i18n="p.voice.f1">自然语音合成 (TTS)</li>
+          <li data-i18n="p.voice.f2">智能语音识别 (ASR)</li>
+          <li data-i18n="p.voice.f3">多轮对话流程</li>
+          <li data-i18n="p.voice.f4">实时通话分析</li>
+        </ul>
+        <a href="#contact" class="product-link" data-i18n="p.learn">了解详情 →</a>
+      </div>
+      <div class="product-card card-green reveal">
+        <div class="product-icon-wrap">📧</div>
+        <h3 data-i18n="p.email.name">邮件群发</h3>
+        <p data-i18n="p.email.desc">高送达率企业邮件营销平台，支持模板编辑、自动化触发、A/B 测试与详细数据分析。</p>
+        <ul class="product-features">
+          <li data-i18n="p.email.f1">拖拽式模板编辑器</li>
+          <li data-i18n="p.email.f2">自动化邮件序列</li>
+          <li data-i18n="p.email.f3">A/B 测试优化</li>
+          <li data-i18n="p.email.f4">送达与打开追踪</li>
+        </ul>
+        <a href="#contact" class="product-link" data-i18n="p.learn">了解详情 →</a>
+      </div>
+      <div class="product-card card-purple reveal">
+        <div class="product-icon-wrap">💬</div>
+        <h3 data-i18n="p.wa.name">WhatsApp 商务</h3>
+        <p data-i18n="p.wa.desc">官方 WhatsApp Business API 服务商，助力品牌与全球 20 亿 WhatsApp 用户建立直接连接。</p>
+        <ul class="product-features">
+          <li data-i18n="p.wa.f1">官方 BSP 认证</li>
+          <li data-i18n="p.wa.f2">富媒体消息模板</li>
+          <li data-i18n="p.wa.f3">交互式按钮消息</li>
+          <li data-i18n="p.wa.f4">客服对话管理</li>
+        </ul>
+        <a href="#contact" class="product-link" data-i18n="p.learn">了解详情 →</a>
+      </div>
+      <div class="product-card card-orange reveal">
+        <div class="product-icon-wrap">📡</div>
+        <h3 data-i18n="p.iot.name">物联网卡</h3>
+        <p data-i18n="p.iot.desc">面向智能硬件、车联网、智慧城市的专业物联网 SIM 卡，全球多网切换，稳定可靠。</p>
+        <ul class="product-features">
+          <li data-i18n="p.iot.f1">eSIM / 实体 SIM 双形态</li>
+          <li data-i18n="p.iot.f2">多网自动切换</li>
+          <li data-i18n="p.iot.f3">统一设备管理平台</li>
+          <li data-i18n="p.iot.f4">低功耗 NB-IoT 支持</li>
+        </ul>
+        <a href="#contact" class="product-link" data-i18n="p.learn">了解详情 →</a>
+      </div>
+      <div class="product-card card-rose reveal">
+        <div class="product-icon-wrap">🌍</div>
+        <h3 data-i18n="p.roam.name">国际漫游流量包</h3>
+        <p data-i18n="p.roam.desc">覆盖 200+ 国家和地区的国际数据流量套餐，灵活按需购买，商旅出行随时保持在线。</p>
+        <ul class="product-features">
+          <li data-i18n="p.roam.f1">200+ 国家地区覆盖</li>
+          <li data-i18n="p.roam.f2">日包/周包/月包灵活选择</li>
+          <li data-i18n="p.roam.f3">实时用量监控</li>
+          <li data-i18n="p.roam.f4">企业批量管理</li>
+        </ul>
+        <a href="#contact" class="product-link" data-i18n="p.learn">了解详情 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI AGENTS -->
+<section id="ai-agents" class="ai-agents-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag ai-tag" data-i18n="ai.tag">AI 智能体矩阵</span>
+      <h2 class="section-title" data-i18n="ai.title">落地企业每个关键环节的 AI 智能体</h2>
+      <p class="section-desc" data-i18n="ai.desc">从销售线索到售后服务，从内部审批到网络推广，AI 智能体全面赋能企业数字化运营，大幅降本增效</p>
+    </div>
+
+    <!-- 场景标签页 -->
+    <div class="ai-tabs reveal">
+      <button class="ai-tab active" onclick="switchAITab('sales')" data-i18n="ai.tab.sales">🎯 销售增长</button>
+      <button class="ai-tab" onclick="switchAITab('service')" data-i18n="ai.tab.service">🎧 智能客服</button>
+      <button class="ai-tab" onclick="switchAITab('ops')" data-i18n="ai.tab.ops">⚙️ 内部流程</button>
+      <button class="ai-tab" onclick="switchAITab('marketing')" data-i18n="ai.tab.marketing">📣 网络推广</button>
+    </div>
+
+    <!-- 销售增长 -->
+    <div class="ai-tab-panel active" id="ai-panel-sales">
+      <div class="ai-panel-intro reveal">
+        <div class="ai-panel-icon">🎯</div>
+        <div>
+          <h3 data-i18n="ai.sales.h">销售 AI 智能体 — 从线索到成交全自动化</h3>
+          <p data-i18n="ai.sales.sub">AI 智能体 7×24 小时跟进销售线索、自动筛选高意向客户、辅助销售团队提高转化率，让每一条商机都不再流失。</p>
+        </div>
+      </div>
+      <div class="ai-agents-grid">
+        <div class="ai-agent-card reveal">
+          <div class="ai-agent-icon" style="background:linear-gradient(135deg,#2563EB,#60A5FA)">🔍</div>
+          <h4 data-i18n="ai.sales.a1.name">线索挖掘智能体</h4>
+          <p data-i18n="ai.sales.a1.desc">自动抓取多渠道线索，AI 评分筛选高意向客户，优先推送给销售代表，节省 70% 初筛时间。</p>
+          <ul class="ai-agent-tags">
+            <li data-i18n="ai.sales.a1.t1">多渠道线索汇聚</li>
+            <li data-i18n="ai.sales.a1.t2">AI 意向评分</li>
+            <li data-i18n="ai.sales.a1.t3">CRM 自动录入</li>
+          </ul>
+        </div>
+        <div class="ai-agent-card reveal">
+          <div class="ai-agent-icon" style="background:linear-gradient(135deg,#0EA5E9,#06B6D4)">📞</div>
+          <h4 data-i18n="ai.sales.a2.name">外呼跟进智能体</h4>
+          <p data-i18n="ai.sales.a2.desc">AI 语音外呼自动进行初步沟通、预约演示，热线索实时转接人工，冷线索智能培育。</p>
+          <ul class="ai-agent-tags">
+            <li data-i18n="ai.sales.a2.t1">智能外呼脚本</li>
+            <li data-i18n="ai.sales.a2.t2">自动预约日程</li>
+            <li data-i18n="ai.sales.a2.t3">热线索实时转接</li>
+          </ul>
+        </div>
+        <div class="ai-agent-card reveal">
+          <div class="ai-agent-icon" style="background:linear-gradient(135deg,#8B5CF6,#A78BFA)">💡</div>
+          <h4 data-i18n="ai.sales.a3.name">销售辅助智能体</h4>
+          <p data-i18n="ai.sales.a3.desc">实时分析客户画像，为销售代表推荐话术、产品方案与报价策略，提升人均成单效率。</p>
+          <ul class="ai-agent-tags">
+            <li data-i18n="ai.sales.a3.t1">客户画像分析</li>
+            <li data-i18n="ai.sales.a3.t2">实时话术推荐</li>
+            <li data-i18n="ai.sales.a3.t3">报价方案生成</li>
+          </ul>
+        </div>
+        <div class="ai-agent-card reveal">
+          <div class="ai-agent-icon" style="background:linear-gradient(135deg,#10B981,#34D399)">📊</div>
+          <h4 data-i18n="ai.sales.a4.name">销售预测智能体</h4>
+          <p data-i18n="ai.sales.a4.desc">基于历史数据与市场动态，AI 预测销售漏斗转化趋势，帮助管理层制定精准销售目标。</p>
+          <ul class="ai-agent-tags">
+            <li data-i18n="ai.sales.a4.t1">漏斗转化预测</li>
+            <li data-i18n="ai.sales.a4.t2">业绩目标拆解</li>
+            <li data-i18n="ai.sales.a4.t3">风险预警提醒</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 智能客服 -->
+    <div class="ai-tab-panel" id="ai-panel-service">
+      <div class="ai-panel-intro reveal">
+        <div class="ai-panel-icon">🎧</div>
+        <div>
+          <h3 data-i18n="ai.service.h">客服 AI 智能体 — 7×24 全渠道极速响应</h3>
+          <p data-i18n="ai.service.sub">AI 智能体接管 80% 常规咨询，复杂问题无缝转人工，统一管理 WhatsApp/邮件/电话/网页等全渠道客服工作台。</p>
+        </div>
+      </div>
+      <div class="ai-agents-grid">
+        <div class="ai-agent-card reveal">
+          <div class="ai-agent-icon" style="background:linear-gradient(135deg,#F59E0B,#FBBF24)">💬</div>
+          <h4 data-i18n="ai.service.a1.name">全渠道客服智能体</h4>
+          <p data-i18n="ai.service.a1.desc">统一接入 WhatsApp、网页聊天、邮件、SMS，AI 自动分类工单并即时回复，响应时间从小时级降至秒级。</p>
+          <ul class="ai-agent-tags">
+            <li data-i18n="ai.service.a1.t1">全渠道统一工作台</li>
+            <li data-i18n="ai.service.a1.t2">工单智能分类</li>
+            <li data-i18n="ai.service.a1.t3">秒级自动回复</li>
+          </ul>
+        </div>
+        <div class="ai-agent-card reveal">
+          <div class="ai-agent-icon" style="background:linear-gradient(135deg,#EF4444,#F87171)">🤝</div>
+          <h4 data-i18n="ai.service.a2.name">智能转人工智能体</h4>
+          <p data-i18n="ai.service.a2.desc">识别复杂或情绪化问题，携带完整上下文无缝转接人工坐席，避免客户重复描述，提升满意度。</p>
+          <ul class="ai-agent-tags">
+            <li data-i18n="ai.service.a2.t1">情绪识别检测</li>
+            <li data-i18n="ai.service.a2.t2">上下文无损转接</li>
+            <li data-i18n="ai.service.a2.t3">坐席负载均衡</li>
+          </ul>
+        </div>
+        <div class="ai-agent-card reveal">
+          <div class="ai-agent-icon" style="background:linear-gradient(135deg,#06B6D4,#0891B2)">📚</div>
+          <h4 data-i18n="ai.service.a3.name">知识库智能体</h4>
+          <p data-i18n="ai.service.a3.desc">基于企业知识库、FAQ、产品手册构建专属 AI 知识脑，实时推送精准答案，持续学习自我更新。</p>
+          <ul class="ai-agent-tags">
+            <li data-i18n="ai.service.a3.t1">私有知识库训练</li>
+            <li data-i18n="ai.service.a3.t2">精准语义检索</li>
+            <li data-i18n="ai.service.a3.t3">持续自我学习</li>
+          </ul>
+        </div>
+        <div class="ai-agent-card reveal">
+          <div class="ai-agent-icon" style="background:linear-gradient(135deg,#7C3AED,#A78BFA)">📈</div>
+          <h4 data-i18n="ai.service.a4.name">服务质量分析智能体</h4>
+          <p data-i18n="ai.service.a4.desc">自动分析对话质量、客户满意度与坐席绩效，生成可视化报告，识别改进点持续优化服务体系。</p>
+          <ul class="ai-agent-tags">
+            <li data-i18n="ai.service.a4.t1">对话质检评分</li>
+            <li data-i18n="ai.service.a4.t2">CSAT 自动统计</li>
+            <li data-i18n="ai.service.a4.t3">坐席绩效报告</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 内部流程 -->
+    <div class="ai-tab-panel" id="ai-panel-ops">
+      <div class="ai-panel-intro reveal">
+        <div class="ai-panel-icon">⚙️</div>
+        <div>
+          <h3 data-i18n="ai.ops.h">流程 AI 智能体 — 内部运营全面自动化</h3>
+          <p data-i18n="ai.ops.sub">AI 智能体接入企业内部系统，自动化审批、HR 事务、财务对账与 IT 支持，解放员工精力专注高价值工作。</p>
+        </div>
+      </div>
+      <div class="ai-agents-grid">
+        <div class="ai-agent-card reveal">
+          <div class="ai-agent-icon" style="background:linear-gradient(135deg,#059669,#34D399)">📋</div>
+          <h4 data-i18n="ai.ops.a1.name">审批流程智能体</h4>
+          <p data-i18n="ai.ops.a1.desc">自动识别审批需求，路由到对应负责人，跟踪进度并发送提醒，合规文件自动归档留存。</p>
+          <ul class="ai-agent-tags">
+            <li data-i18n="ai.ops.a1.t1">智能审批路由</li>
+            <li data-i18n="ai.ops.a1.t2">进度自动提醒</li>
+            <li data-i18n="ai.ops.a1.t3">合规文件归档</li>
+          </ul>
+        </div>
+        <div class="ai-agent-card reveal">
+          <div class="ai-agent-icon" style="background:linear-gradient(135deg,#0EA5E9,#38BDF8)">👥</div>
+          <h4 data-i18n="ai.ops.a2.name">HR 助理智能体</h4>
+          <p data-i18n="ai.ops.a2.desc">自动处理入职离职手续、假勤申请、薪资查询、政策问答，HR 专注策略性工作，效率提升 60%。</p>
+          <ul class="ai-agent-tags">
+            <li data-i18n="ai.ops.a2.t1">入离职流程自动化</li>
+            <li data-i18n="ai.ops.a2.t2">假勤智能审批</li>
+            <li data-i18n="ai.ops.a2.t3">员工政策问答</li>
+          </ul>
+        </div>
+        <div class="ai-agent-card reveal">
+          <div class="ai-agent-icon" style="background:linear-gradient(135deg,#F59E0B,#FCD34D)">💰</div>
+          <h4 data-i18n="ai.ops.a3.name">财务对账智能体</h4>
+          <p data-i18n="ai.ops.a3.desc">自动提取发票、核对账单、生成对账报告，异常数据智能预警，财务月结时间缩短 80%。</p>
+          <ul class="ai-agent-tags">
+            <li data-i18n="ai.ops.a3.t1">发票自动提取</li>
+            <li data-i18n="ai.ops.a3.t2">账单智能核对</li>
+            <li data-i18n="ai.ops.a3.t3">异常数据预警</li>
+          </ul>
+        </div>
+        <div class="ai-agent-card reveal">
+          <div class="ai-agent-icon" style="background:linear-gradient(135deg,#6366F1,#818CF8)">🖥️</div>
+          <h4 data-i18n="ai.ops.a4.name">IT 支持智能体</h4>
+          <p data-i18n="ai.ops.a4.desc">自动处理 IT 工单，远程诊断常见故障，一键开通账户权限，人工工程师专注复杂故障排查。</p>
+          <ul class="ai-agent-tags">
+            <li data-i18n="ai.ops.a4.t1">工单自动分派</li>
+            <li data-i18n="ai.ops.a4.t2">远程故障诊断</li>
+            <li data-i18n="ai.ops.a4.t3">权限自动开通</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 网络推广 -->
+    <div class="ai-tab-panel" id="ai-panel-marketing">
+      <div class="ai-panel-intro reveal">
+        <div class="ai-panel-icon">📣</div>
+        <div>
+          <h3 data-i18n="ai.marketing.h">推广 AI 智能体 — 全渠道营销自动驾驶</h3>
+          <p data-i18n="ai.marketing.sub">AI 智能体自动创作内容、投放广告、运营社交媒体与 SEO，让品牌声量持续增长，营销成本大幅降低。</p>
+        </div>
+      </div>
+      <div class="ai-agents-grid">
+        <div class="ai-agent-card reveal">
+          <div class="ai-agent-icon" style="background:linear-gradient(135deg,#EC4899,#F472B6)">✍️</div>
+          <h4 data-i18n="ai.marketing.a1.name">内容创作智能体</h4>
+          <p data-i18n="ai.marketing.a1.desc">自动生成多语言营销文案、社交媒体帖子、博客与产品描述，保持品牌调性，产出效率提升 10 倍。</p>
+          <ul class="ai-agent-tags">
+            <li data-i18n="ai.marketing.a1.t1">多语言文案生成</li>
+            <li data-i18n="ai.marketing.a1.t2">品牌调性一致</li>
+            <li data-i18n="ai.marketing.a1.t3">SEO 关键词优化</li>
+          </ul>
+        </div>
+        <div class="ai-agent-card reveal">
+          <div class="ai-agent-icon" style="background:linear-gradient(135deg,#F97316,#FB923C)">🎯</div>
+          <h4 data-i18n="ai.marketing.a2.name">广告投放智能体</h4>
+          <p data-i18n="ai.marketing.a2.desc">自动管理 Google/Meta/TikTok 多平台广告，AI 实时优化出价与受众定向，ROI 平均提升 35%。</p>
+          <ul class="ai-agent-tags">
+            <li data-i18n="ai.marketing.a2.t1">多平台广告管理</li>
+            <li data-i18n="ai.marketing.a2.t2">实时出价优化</li>
+            <li data-i18n="ai.marketing.a2.t3">受众智能扩展</li>
+          </ul>
+        </div>
+        <div class="ai-agent-card reveal">
+          <div class="ai-agent-icon" style="background:linear-gradient(135deg,#14B8A6,#2DD4BF)">📱</div>
+          <h4 data-i18n="ai.marketing.a3.name">社媒运营智能体</h4>
+          <p data-i18n="ai.marketing.a3.desc">自动发布多平台内容、监控品牌提及、自动回复评论与私信，维护品牌声誉，粉丝增长提速。</p>
+          <ul class="ai-agent-tags">
+            <li data-i18n="ai.marketing.a3.t1">多平台定时发布</li>
+            <li data-i18n="ai.marketing.a3.t2">品牌舆情监控</li>
+            <li data-i18n="ai.marketing.a3.t3">评论自动互动</li>
+          </ul>
+        </div>
+        <div class="ai-agent-card reveal">
+          <div class="ai-agent-icon" style="background:linear-gradient(135deg,#8B5CF6,#C084FC)">🔮</div>
+          <h4 data-i18n="ai.marketing.a4.name">营销分析智能体</h4>
+          <p data-i18n="ai.marketing.a4.desc">整合全渠道数据，AI 解读用户行为、归因营销效果，自动生成决策报告，指导下一轮预算分配。</p>
+          <ul class="ai-agent-tags">
+            <li data-i18n="ai.marketing.a4.t1">全渠道数据整合</li>
+            <li data-i18n="ai.marketing.a4.t2">营销归因分析</li>
+            <li data-i18n="ai.marketing.a4.t3">预算分配建议</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部 CTA -->
+    <div class="ai-bottom-cta reveal">
+      <div class="ai-cta-stats">
+        <div class="ai-cta-stat"><span class="ai-cta-num" data-i18n="ai.stat1.num">80%</span><span class="ai-cta-label" data-i18n="ai.stat1.label">重复任务自动化率</span></div>
+        <div class="ai-cta-stat"><span class="ai-cta-num" data-i18n="ai.stat2.num">60%</span><span class="ai-cta-label" data-i18n="ai.stat2.label">平均人力成本降低</span></div>
+        <div class="ai-cta-stat"><span class="ai-cta-num" data-i18n="ai.stat3.num">3x</span><span class="ai-cta-label" data-i18n="ai.stat3.label">业务处理效率提升</span></div>
+        <div class="ai-cta-stat"><span class="ai-cta-num" data-i18n="ai.stat4.num">7×24</span><span class="ai-cta-label" data-i18n="ai.stat4.label">不间断运营覆盖</span></div>
+      </div>
+      <a href="#contact" class="btn-primary ai-cta-btn">
+        <span data-i18n="ai.cta">免费体验 AI 智能体 →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why" class="why-section">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-visual reveal">
+        <div class="why-main-card">
+          <div class="why-card-title" data-i18n="why.dashboard">实时通信监控台</div>
+          <div class="why-dashboard">
+            <div class="why-metric"><div class="why-metric-val">98.<span>7%</span></div><div class="why-metric-label" data-i18n="why.m1">短信送达率</div></div>
+            <div class="why-metric"><div class="why-metric-val">4.<span>2s</span></div><div class="why-metric-label" data-i18n="why.m2">平均响应时间</div></div>
+            <div class="why-metric"><div class="why-metric-val">24<span>M</span></div><div class="why-metric-label" data-i18n="why.m3">今日消息量</div></div>
+            <div class="why-metric"><div class="why-metric-val">99.<span>9%</span></div><div class="why-metric-label" data-i18n="why.m4">系统可用率</div></div>
+          </div>
+          <div class="why-bars">
+            <div class="bar-row"><span data-i18n="why.bar.sms">短信通道负载</span><span>68%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:68%;background:linear-gradient(90deg,#2563EB,#60A5FA)"></div></div>
+            <div class="bar-row"><span data-i18n="why.bar.voice">语音线路占用</span><span>42%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:42%;background:linear-gradient(90deg,#06B6D4,#0891B2)"></div></div>
+            <div class="bar-row"><span data-i18n="why.bar.wa">WhatsApp 队列</span><span>55%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:55%;background:linear-gradient(90deg,#8B5CF6,#7C3AED)"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="why-text">
+        <span class="section-tag" data-i18n="why.tag">核心优势</span>
+        <h2 class="section-title" data-i18n="why.title">为什么企业选择 OmniConnect？</h2>
+        <p class="section-desc" data-i18n="why.desc">我们深耕通信行业十余年，以稳定的基础设施、丰富的生态和专业的服务，赢得超过 10,000 家企业客户的信任。</p>
+        <div class="why-features">
+          <div class="why-feature reveal"><div class="why-feature-icon">🌐</div><div><h4 data-i18n="why.f1.t">全球直连通道</h4><p data-i18n="why.f1.d">与全球 800+ 运营商直接合作，无需第三方中转，保障消息高速送达与最优成本。</p></div></div>
+          <div class="why-feature reveal"><div class="why-feature-icon">🔒</div><div><h4 data-i18n="why.f2.t">企业级安全合规</h4><p data-i18n="why.f2.d">获得 ISO 27001、SOC 2 Type II 认证，数据加密存储与传输，满足 GDPR 等全球合规要求。</p></div></div>
+          <div class="why-feature reveal"><div class="why-feature-icon">⚡</div><div><h4 data-i18n="why.f3.t">极速 API 接入</h4><p data-i18n="why.f3.d">完善的 RESTful API 与 SDK，5 分钟快速接入，详尽文档与沙盒环境，开发体验一流。</p></div></div>
+          <div class="why-feature reveal"><div class="why-feature-icon">🛡️</div><div><h4 data-i18n="why.f4.t">7×24 专属支持</h4><p data-i18n="why.f4.d">专业客户成功团队全天候服务，多语种支持，SLA 保障快速响应与故障恢复。</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOBAL -->
+<section id="global" class="global-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag light" data-i18n="global.tag">全球布局</span>
+      <h2 class="section-title light" data-i18n="global.title">覆盖 200+ 国家与地区</h2>
+      <p class="section-desc light" data-i18n="global.desc">从东南亚到中东非洲，从欧美到南亚，OmniConnect 的全球通信网络触达每一个角落</p>
+    </div>
+    <div class="global-stats reveal">
+      <div class="global-item"><div class="global-num">200+</div><div class="global-label" data-i18n="g.c1">覆盖国家地区</div></div>
+      <div class="global-item"><div class="global-num">800+</div><div class="global-label" data-i18n="g.c2">运营商直连合作</div></div>
+      <div class="global-item"><div class="global-num">5B+</div><div class="global-label" data-i18n="g.c3">年消息发送量</div></div>
+      <div class="global-item"><div class="global-num">99.9%</div><div class="global-label" data-i18n="g.c4">网络可用率 SLA</div></div>
+    </div>
+    <div class="regions-grid reveal">
+      <div class="region-card"><span class="region-icon">🌏</span><div><div class="region-name" data-i18n="r.sea">东南亚</div><div class="region-count" data-i18n="r.sea.c">覆盖 11 个国家</div></div></div>
+      <div class="region-card"><span class="region-icon">🌍</span><div><div class="region-name" data-i18n="r.mena">中东 &amp; 非洲</div><div class="region-count" data-i18n="r.mena.c">覆盖 54 个国家</div></div></div>
+      <div class="region-card"><span class="region-icon">🌎</span><div><div class="region-name" data-i18n="r.eu">欧洲</div><div class="region-count" data-i18n="r.eu.c">覆盖 44 个国家</div></div></div>
+      <div class="region-card"><span class="region-icon">🌐</span><div><div class="region-name" data-i18n="r.na">北美</div><div class="region-count" data-i18n="r.na.c">覆盖 3 个国家</div></div></div>
+      <div class="region-card"><span class="region-icon">🗺️</span><div><div class="region-name" data-i18n="r.sa">南亚</div><div class="region-count" data-i18n="r.sa.c">覆盖 8 个国家</div></div></div>
+      <div class="region-card"><span class="region-icon">🌏</span><div><div class="region-name" data-i18n="r.latam">拉丁美洲</div><div class="region-count" data-i18n="r.latam.c">覆盖 33 个国家</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag" data-i18n="pricing.tag">定价方案</span>
+      <h2 class="section-title" data-i18n="pricing.title">透明灵活的定价体系</h2>
+      <p class="section-desc" data-i18n="pricing.desc">从初创企业到跨国集团，总有一款方案适合您的业务规模</p>
+    </div>
+    <div class="pricing-tabs">
+      <button class="pricing-tab active" onclick="switchPricing('m')" data-i18n="pricing.mo">按月付费</button>
+      <button class="pricing-tab" onclick="switchPricing('y')" data-i18n="pricing.yr">按年付费（省 20%）</button>
+    </div>
+    <div class="pricing-grid reveal">
+      <div class="pricing-card">
+        <div class="pricing-name" data-i18n="pl.s.name">入门版</div>
+        <div class="pricing-price"><sup>¥</sup><span class="price-val" data-m="999" data-y="799">999</span><small data-i18n="pricing.per">/月</small></div>
+        <p class="pricing-desc-text" data-i18n="pl.s.sub">适合中小企业起步使用</p>
+        <ul class="pricing-list">
+          <li><span class="ck">✓</span><span data-i18n="pl.s.f1">10 万条短信/月</span></li>
+          <li><span class="ck">✓</span><span data-i18n="pl.s.f2">5,000 封邮件/月</span></li>
+          <li><span class="ck">✓</span><span data-i18n="pl.s.f3">WhatsApp 基础接入</span></li>
+          <li><span class="ck">✓</span><span data-i18n="pl.s.f4">标准 API 访问</span></li>
+          <li><span class="ck">✓</span><span data-i18n="pl.s.f5">工作时间技术支持</span></li>
+        </ul>
+        <a href="#contact" class="btn-price-outline" data-i18n="pl.cta.try">免费试用 14 天</a>
+      </div>
+      <div class="pricing-card featured">
+        <div class="pricing-badge" data-i18n="pl.p.badge">最受欢迎</div>
+        <div class="pricing-name" data-i18n="pl.p.name">专业版</div>
+        <div class="pricing-price"><sup>¥</sup><span class="price-val" data-m="3999" data-y="3199">3,999</span><small data-i18n="pricing.per">/月</small></div>
+        <p class="pricing-desc-text" data-i18n="pl.p.sub">适合快速增长的中型企业</p>
+        <ul class="pricing-list">
+          <li><span class="ck">✓</span><span data-i18n="pl.p.f1">100 万条短信/月</span></li>
+          <li><span class="ck">✓</span><span data-i18n="pl.p.f2">50 万封邮件/月</span></li>
+          <li><span class="ck">✓</span><span data-i18n="pl.p.f3">WhatsApp + 语音机器人</span></li>
+          <li><span class="ck">✓</span><span data-i18n="pl.p.f4">物联网卡管理（50 张）</span></li>
+          <li><span class="ck">✓</span><span data-i18n="pl.p.f5">高级 API + Webhook</span></li>
+          <li><span class="ck">✓</span><span data-i18n="pl.p.f6">7×24 优先技术支持</span></li>
+        </ul>
+        <a href="#contact" class="btn-price-primary" data-i18n="pl.cta.go">立即开始</a>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-name" data-i18n="pl.e.name">企业版</div>
+        <div class="pricing-price"><span style="font-size:26px;font-weight:700" data-i18n="pl.e.price">定制报价</span></div>
+        <p class="pricing-desc-text" data-i18n="pl.e.sub">大型企业与定制化需求</p>
+        <ul class="pricing-list">
+          <li><span class="ck">✓</span><span data-i18n="pl.e.f1">无限消息量</span></li>
+          <li><span class="ck">✓</span><span data-i18n="pl.e.f2">六大产品全部开通</span></li>
+          <li><span class="ck">✓</span><span data-i18n="pl.e.f3">专属通道与私有部署</span></li>
+          <li><span class="ck">✓</span><span data-i18n="pl.e.f4">国际漫游流量包</span></li>
+          <li><span class="ck">✓</span><span data-i18n="pl.e.f5">SLA 保障 + 专属客户成功</span></li>
+          <li><span class="ck">✓</span><span data-i18n="pl.e.f6">合规与安全审计支持</span></li>
+        </ul>
+        <a href="#contact" class="btn-price-outline" data-i18n="pl.cta.sales">联系销售团队</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="testi-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag" data-i18n="testi.tag">客户案例</span>
+      <h2 class="section-title" data-i18n="testi.title">来自全球客户的真实反馈</h2>
+      <p class="section-desc" data-i18n="testi.desc">超过 10,000 家企业选择 OmniConnect，听听他们怎么说</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text" data-i18n="t1.text">"接入 OmniConnect 后，我们的短信验证码送达率从 82% 提升到 98%，成本降低了 35%。API 文档清晰，集成只花了两天。"</p>
+        <div class="testi-author"><div class="testi-avatar">👨‍💼</div><div><div class="testi-name" data-i18n="t1.name">张伟 · CTO</div><div class="testi-role" data-i18n="t1.co">某头部电商平台</div></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text" data-i18n="t2.text">"We expanded into Southeast Asia and needed multi-channel comms. OmniConnect's WhatsApp + SMS combo helped us acquire 50,000 users in just 3 months."</p>
+        <div class="testi-author"><div class="testi-avatar">👩‍💼</div><div><div class="testi-name" data-i18n="t2.name">Sarah Chen · VP Marketing</div><div class="testi-role" data-i18n="t2.co">FinTech Startup, Singapore</div></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text" data-i18n="t3.text">"يساعدنا OmniConnect في التواصل مع عملائنا في 15 دولة. معدل التسليم ممتاز والدعم متاح على مدار الساعة."</p>
+        <div class="testi-author"><div class="testi-avatar">👨‍💼</div><div><div class="testi-name" data-i18n="t3.name">محمد الأحمد · المدير التنفيذي</div><div class="testi-role" data-i18n="t3.co">شركة تجارة إلكترونية، دبي</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <div class="cta-bg"></div>
+  <div class="container cta-inner">
+    <h2 data-i18n="cta.title">准备好开始了吗？</h2>
+    <p data-i18n="cta.desc">免费试用 14 天，无需信用卡，专属顾问 1 对 1 协助您快速上手</p>
+    <div class="cta-actions">
+      <a href="mailto:sales@omniconnect.io" class="btn-cta-white" data-i18n="cta.b1">立即申请免费试用</a>
+      <a href="tel:+864008889999" class="btn-cta-outline" data-i18n="cta.b2">📞 联系销售 400-888-9999</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo"><div class="logo-icon">🔗</div><span class="logo-text">Omni<span>Connect</span></span></a>
+        <p data-i18n="ft.desc">企业级融合通信服务商，连接全球，智慧沟通。</p>
+        <div class="footer-social">
+          <a class="social-btn" href="#">💼</a>
+          <a class="social-btn" href="#">🐦</a>
+          <a class="social-btn" href="#">💬</a>
+          <a class="social-btn" href="#">📧</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="ft.products">产品</h5>
+        <ul class="footer-links">
+          <li><a href="#" data-i18n="p.sms.name">企业短信</a></li>
+          <li><a href="#" data-i18n="p.voice.name">AI 语音机器人</a></li>
+          <li><a href="#" data-i18n="p.email.name">邮件群发</a></li>
+          <li><a href="#" data-i18n="p.wa.name">WhatsApp 商务</a></li>
+          <li><a href="#" data-i18n="p.iot.name">物联网卡</a></li>
+          <li><a href="#" data-i18n="p.roam.name">国际漫游流量包</a></li>
+          <li><a href="#ai-agents" data-i18n="ft.ai">AI 智能体</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="ft.company">公司</h5>
+        <ul class="footer-links">
+          <li><a href="#" data-i18n="ft.about">关于我们</a></li>
+          <li><a href="#" data-i18n="ft.blog">博客</a></li>
+          <li><a href="#" data-i18n="ft.careers">加入我们</a></li>
+          <li><a href="#" data-i18n="ft.partners">合作伙伴</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="ft.support">支持</h5>
+        <ul class="footer-links">
+          <li><a href="#" data-i18n="ft.docs">开发者文档</a></li>
+          <li><a href="#" data-i18n="ft.api">API 参考</a></li>
+          <li><a href="#" data-i18n="ft.status">服务状态</a></li>
+          <li><a href="#contact" data-i18n="ft.contact">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="ft.copy">© 2026 OmniConnect. 保留所有权利。</p>
+      <div class="footer-badges">
+        <span class="badge badge-green">ISO 27001</span>
+        <span class="badge badge-green">SOC 2 Type II</span>
+        <span class="badge badge-blue">GDPR</span>
+        <span class="badge badge-blue">WhatsApp BSP</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
