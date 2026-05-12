@@ -3,62 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OmniConnect · 融合通信解决方案</title>
-  <meta name="description" content="企业级融合通信平台，覆盖企业短信、语音机器人、邮件群发、WhatsApp、物联网卡、国际漫游流量包" />
+  <title>OmniConnect · 融合通信平台 — 全球短信、WhatsApp、AI语音、邮件解决方案</title>
+  <meta name="description" content="OmniConnect 企业级融合通信平台，覆盖全球短信 SMS、WhatsApp Business API、AI 语音机器人、邮件群发、物联网卡及国际漫游。服务 200+ 国家，99.9% 可用率，助力中国企业出海全球化通信。" />
+  <meta name="keywords" content="融合通信,企业短信,国际短信,WhatsApp API,AI语音机器人,邮件群发,物联网卡,国际漫游,企业通信平台,出海通信" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.bjszrk.com/" />
+  
+  <!-- 多语言 hreflang -->
+  <link rel="alternate" hreflang="zh" href="https://www.bjszrk.com/zh" />
+  <link rel="alternate" hreflang="en" href="https://www.bjszrk.com/en" />
+  <link rel="alternate" hreflang="ar" href="https://www.bjszrk.com/ar" />
+  <link rel="alternate" hreflang="x-default" href="https://www.bjszrk.com/zh" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="OmniConnect · 融合通信平台 — 全球短信、WhatsApp、AI语音、邮件" />
+  <meta property="og:description" content="企业级融合通信平台，覆盖全球短信 SMS、WhatsApp Business API、AI 语音机器人、邮件群发。服务 200+ 国家，99.9% 可用率。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.bjszrk.com/" />
+  <meta property="og:image" content="https://www.bjszrk.com/og-image.png" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:site_name" content="OmniConnect" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="OmniConnect · 融合通信平台 — 全球短信、WhatsApp、AI语音、邮件" />
+  <meta name="twitter:description" content="企业级融合通信平台，覆盖全球短信 SMS、WhatsApp Business API、AI 语音机器人、邮件群发。服务 200+ 国家，99.9% 可用率。" />
+  <meta name="twitter:image" content="https://www.bjszrk.com/og-image.png" />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>" />
+  
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans+Arabic:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-  <div class="container">
-    <div class="nav-inner">
-      <a href="#" class="logo">
-        <div class="logo-icon">🔗</div>
-        <span class="logo-text">Omni<span>Connect</span></span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#products" data-i18n="nav.products">产品</a></li>
-        <li><a href="#ai-agents" data-i18n="nav.ai">AI 智能体</a></li>
-        <li><a href="#why" data-i18n="nav.why">为何选择我们</a></li>
-        <li><a href="#global" data-i18n="nav.global">全球覆盖</a></li>
-        <li><a href="#pricing" data-i18n="nav.pricing">定价</a></li>
-        <li><a href="#testimonials" data-i18n="nav.testimonials">客户案例</a></li>
-      </ul>
-      <div class="nav-right">
-        <div class="lang-switcher">
-          <button class="lang-btn" id="langBtn">
-            <span id="langFlag">🇨🇳</span>
-            <span id="langLabel">中文</span>
-            <svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </button>
-          <div class="lang-dropdown">
-            <div class="lang-option active" onclick="switchLang('zh')"><span class="flag">🇨🇳</span> 中文 (简体)</div>
-            <div class="lang-option" onclick="switchLang('en')"><span class="flag">🇺🇸</span> English</div>
-            <div class="lang-option" onclick="switchLang('ar')"><span class="flag">🇸🇦</span> العربية</div>
-          </div>
-        </div>
-        <a href="#contact" class="btn-nav" data-i18n="nav.contact">免费咨询</a>
-      </div>
-      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
-      </div>
-    </div>
-  </div>
-</nav>
+<!-- JSON-LD 结构化数据 (SEO + GEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "OmniConnect",
+  "alternateName": ["融信通信", "Newtong"],
+  "description": "企业级融合通信平台，覆盖全球短信SMS、WhatsApp Business API、AI语音机器人、邮件群发",
+  "url": "https://www.bjszrk.com",
+  "foundingDate": "2018",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+86-400-888-9999",
+    "contactType": "sales",
+    "availableLanguage": ["Chinese", "English", "Arabic"]
+  },
+  "sameAs": ["https://www.bjszrk.com"]
+}
+</script>
 
-<div class="mobile-menu" id="mobileMenu">
-  <ul class="mobile-links">
-    <li><a href="#products" onclick="toggleMenu()" data-i18n="nav.products">产品</a></li>
-    <li><a href="#ai-agents" onclick="toggleMenu()" data-i18n="nav.ai">AI 智能体</a></li>
-    <li><a href="#why" onclick="toggleMenu()" data-i18n="nav.why">为何选择我们</a></li>
-    <li><a href="#global" onclick="toggleMenu()" data-i18n="nav.global">全球覆盖</a></li>
-    <li><a href="#pricing" onclick="toggleMenu()" data-i18n="nav.pricing">定价</a></li>
-    <li><a href="#testimonials" onclick="toggleMenu()" data-i18n="nav.testimonials">客户案例</a></li>
-    <li><a href="#contact" onclick="toggleMenu()" data-i18n="nav.contact">免费咨询</a></li>
-  </ul>
-</div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "OmniConnect",
+  "url": "https://www.bjszrk.com",
+  "description": "企业级融合通信平台，覆盖全球短信SMS、WhatsApp Business API、AI语音机器人、邮件群发、物联网卡及国际漫游",
+  "inLanguage": ["zh-CN", "en", "ar"],
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.bjszrk.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "OmniConnect 产品矩阵",
+  "description": "覆盖全渠道的通信解决方案",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"item":{"@type":"Product","name":"企业短信 (Global SMS)","description":"全球短信通道，支持验证码、营销推送、交易通知，覆盖200+国家","category":"通信服务"}},
+    {"@type":"ListItem","position":2,"item":{"@type":"Product","name":"AI 语音机器人","description":"基于AI的智能语音外呼与接听系统","category":"AI语音服务"}},
+    {"@type":"ListItem","position":3,"item":{"@type":"Product","name":"邮件群发","description":"高送达率企业邮件营销平台","category":"邮件服务"}},
+    {"@type":"ListItem","position":4,"item":{"@type":"Product","name":"WhatsApp Business API","description":"官方WhatsApp Business API服务商","category":"社交通信"}},
+    {"@type":"ListItem","position":5,"item":{"@type":"Product","name":"物联网卡","description":"面向智能硬件的专业物联网SIM卡","category":"物联网"}},
+    {"@type":"ListItem","position":6,"item":{"@type":"Product","name":"国际漫游流量包","description":"覆盖200+国家的国际数据流量套餐","category":"漫游服务"}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"OmniConnect 是什么？","acceptedAnswer":{"@type":"Answer","text":"OmniConnect 是一家企业级融合通信服务商，提供全球短信SMS、WhatsApp Business API、AI语音机器人、邮件群发、物联网卡和国际漫游流量包等一站式通信解决方案，服务全球200+国家的企业客户。"}},
+    {"@type":"Question","name":"OmniConnect 支持哪些国家的短信发送？","acceptedAnswer":{"@type":"Answer","text":"支持全球200+国家，重点覆盖东南亚、中东、非洲、欧洲、北美、拉丁美洲等区域。与800+运营商直接合作，保障高送达率。"}},
+    {"@type":"Question","name":"如何接入 OmniConnect 的 API？","acceptedAnswer":{"@type":"Answer","text":"提供RESTful API及Java、Python、PHP、Node.js、Go等SDK。注册账号获取API Key即可在测试环境接入，5分钟完成基础集成。"}},
+    {"@type":"Question","name":"WhatsApp Business API 如何收费？","acceptedAnswer":{"@type":"Answer","text":"按对话计费，分营销/工具/服务/认证四类，不同区域价格不同。营销类参考价$0.012起，量大可享阶梯折扣。"}},
+    {"@type":"Question","name":"OmniConnect 的AI语音机器人支持哪些语言？","acceptedAnswer":{"@type":"Answer","text":"支持中英文、阿拉伯语等多语种语音合成与识别，可定制多轮对话流程，适用于智能外呼、客服回访等场景。"}},
+    {"@type":"Question","name":"OmniConnect 的服务可用率是多少？","acceptedAnswer":{"@type":"Answer","text":"平台可用率承诺99.9%，采用多地域多活架构，智能链路调度与AI路由优化，7×24小时实时监控。"}},
+    {"@type":"Question","name":"OmniConnect 适合哪些行业？","acceptedAnswer":{"@type":"Answer","text":"主要服务跨境电商、金融科技、SaaS软件、游戏出海、国际物流、海外社交平台等行业。"}}
+  ]
+}
+</script>
+
+<!-- Template injects navbar + mobile menu -->
 
 <!-- HERO -->
 <section class="hero" id="home">
@@ -80,13 +130,17 @@
       </h1>
       <p class="hero-desc" data-i18n="hero.desc">一站式融合通信解决方案，覆盖企业短信、语音机器人、邮件群发、WhatsApp、物联网卡与国际流量包，助力企业触达全球每一位客户。</p>
       <div class="hero-actions">
-        <a href="#contact" class="btn-primary">
-          <span data-i18n="hero.cta1">立即开始免费试用</span>
+        <a href="pages/onboarding.html" class="btn-primary">
+          <span data-i18n="hero.cta1">开始接入</span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-        <a href="#products" class="btn-outline">
+        <a href="pages/solutions.html" class="btn-outline">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16"/></svg>
-          <span data-i18n="hero.cta2">查看产品演示</span>
+          <span data-i18n="hero.cta2">获取方案</span>
+        </a>
+        <a href="pages/api.html" class="btn-outline">
+          <span data-i18n="hero.cta3">查看 API</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
       <div class="hero-stats">
@@ -141,9 +195,9 @@
           <li data-i18n="p.sms.f3">交易状态通知</li>
           <li data-i18n="p.sms.f4">双向短信互动</li>
         </ul>
-        <a href="#contact" class="product-link" data-i18n="p.learn">了解详情 →</a>
+        <a href="pages/sms.html" class="product-link" data-i18n="p.learn">了解详情 →</a>
       </div>
-      <div class="product-card card-cyan reveal">
+      <div class="product-card card-blue reveal">
         <div class="product-icon-wrap">🤖</div>
         <h3 data-i18n="p.voice.name">AI 语音机器人</h3>
         <p data-i18n="p.voice.desc">基于 AI 的智能语音外呼与接听系统，自动化客服、催收、调研，极大降低人力成本。</p>
@@ -153,7 +207,31 @@
           <li data-i18n="p.voice.f3">多轮对话流程</li>
           <li data-i18n="p.voice.f4">实时通话分析</li>
         </ul>
-        <a href="#contact" class="product-link" data-i18n="p.learn">了解详情 →</a>
+        <a href="pages/voice.html" class="product-link" data-i18n="p.learn">了解详情 →</a>
+      </div>
+      <div class="product-card card-green reveal">
+        <div class="product-icon-wrap">✉️</div>
+        <h3 data-i18n="p.email.name">邮件群发</h3>
+        <p data-i18n="p.email.desc">高送达率企业邮件营销平台，支持模板编辑、自动化触发、A/B 测试与详细数据分析。</p>
+        <ul class="product-features">
+          <li data-i18n="p.email.f1">拖拽式模板编辑器</li>
+          <li data-i18n="p.email.f2">自动化邮件序列</li>
+          <li data-i18n="p.email.f3">A/B 测试优化</li>
+          <li data-i18n="p.email.f4">送达与打开追踪</li>
+        </ul>
+        <a href="pages/email.html" class="product-link" data-i18n="p.learn">了解详情 →</a>
+      </div>
+      <div class="product-card card-purple reveal">
+        <div class="product-icon-wrap">💬</div>
+        <h3 data-i18n="p.wa.name">WhatsApp 商务</h3>
+        <p data-i18n="p.wa.desc">官方 WhatsApp Business API 服务商，助力品牌与全球 20 亿 WhatsApp 用户建立直接连接。</p>
+        <ul class="product-features">
+          <li data-i18n="p.wa.f1">官方 BSP 认证</li>
+          <li data-i18n="p.wa.f2">富媒体消息模板</li>
+          <li data-i18n="p.wa.f3">交互式按钮消息</li>
+          <li data-i18n="p.wa.f4">客服对话管理</li>
+        </ul>
+        <a href="pages/whatsapp.html" class="product-link" data-i18n="p.learn">了解详情 →</a>
       </div>
       <div class="product-card card-green reveal">
         <div class="product-icon-wrap">📧</div>
@@ -489,6 +567,46 @@
   </div>
 </section>
 
+<!-- PROCESS FLOW -->
+<section id="process" class="process-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag" data-i18n="process.tag">服务流程</span>
+      <h2 class="section-title" data-i18n="process.title">一站式智能通信服务流程</h2>
+      <p class="section-desc" data-i18n="process.desc">从数据输入到智能分析，OmniConnect 将企业通信需求转化为可量化、可优化的自动化流程，让每一次客户触达都精准高效。</p>
+    </div>
+    <div class="process-bar reveal">
+      <div class="process-step">
+        <div class="process-num">1</div>
+        <div class="process-icon">📥</div>
+        <h4 data-i18n="process.s1.title">Input 数据输入</h4>
+        <p data-i18n="process.s1.desc">多渠道客户数据汇聚 — SMS、WhatsApp、邮件、语音、API 接口统一接入平台，支持批量导入与实时流式传输。</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <div class="process-num">2</div>
+        <div class="process-icon">⚙️</div>
+        <h4 data-i18n="process.s2.title">Process 智能处理</h4>
+        <p data-i18n="process.s2.desc">AI 引擎自动分类、翻译、意图识别、内容审核与合规检查。多语言 NLP 确保全球沟通无障碍。</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <div class="process-num">3</div>
+        <div class="process-icon">📤</div>
+        <h4 data-i18n="process.s3.title">Output 多渠道输出</h4>
+        <p data-i18n="process.s3.desc">通过 800+ 运营商直连通道，将消息秒级送达目标客户 — 短信、语音、邮件、WhatsApp 同步分发。</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <div class="process-num">4</div>
+        <div class="process-icon">📊</div>
+        <h4 data-i18n="process.s4.title">Analytics 数据分析</h4>
+        <p data-i18n="process.s4.desc">实时送达率、打开率、转化漏斗分析，AI 生成优化建议，帮助企业持续提升通信 ROI。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- GLOBAL -->
 <section id="global" class="global-section">
   <div class="container">
@@ -510,6 +628,55 @@
       <div class="region-card"><span class="region-icon">🌐</span><div><div class="region-name" data-i18n="r.na">北美</div><div class="region-count" data-i18n="r.na.c">覆盖 3 个国家</div></div></div>
       <div class="region-card"><span class="region-icon">🗺️</span><div><div class="region-name" data-i18n="r.sa">南亚</div><div class="region-count" data-i18n="r.sa.c">覆盖 8 个国家</div></div></div>
       <div class="region-card"><span class="region-icon">🌏</span><div><div class="region-name" data-i18n="r.latam">拉丁美洲</div><div class="region-count" data-i18n="r.latam.c">覆盖 33 个国家</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section id="industries" class="industries-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag" data-i18n="ind.tag">行业方案</span>
+      <h2 class="section-title" data-i18n="ind.title">为每个行业量身定制的通信方案</h2>
+      <p class="section-desc" data-i18n="ind.desc">不同行业有不同的客户触达需求。OmniConnect 深入理解各行业的通信场景，提供精准的 SMS、WhatsApp、AI 语音与邮件组合方案。</p>
+    </div>
+    <div class="industries-grid reveal">
+      <a href="pages/industries/ecommerce.html" class="industry-card">
+        <div class="industry-icon">🛒</div>
+        <h4 data-i18n="ind.ecom">跨境电商</h4>
+        <p data-i18n="ind.ecom.desc">订单通知、物流更新、营销自动化 — 从下单到复购全链路覆盖</p>
+        <span class="industry-link" data-i18n="p.learn">了解详情 →</span>
+      </a>
+      <a href="pages/industries/finance.html" class="industry-card">
+        <div class="industry-icon">💳</div>
+        <h4 data-i18n="ind.fin">国际金融</h4>
+        <p data-i18n="ind.fin.desc">交易验证、风控通知、合规提醒 — 安全可靠的金融级通信</p>
+        <span class="industry-link" data-i18n="p.learn">了解详情 →</span>
+      </a>
+      <a href="pages/industries/saas.html" class="industry-card">
+        <div class="industry-icon">☁️</div>
+        <h4 data-i18n="ind.saas">SaaS 软件</h4>
+        <p data-i18n="ind.saas.desc">用户激活、续费提醒、产品更新 — 驱动用户全生命周期增长</p>
+        <span class="industry-link" data-i18n="p.learn">了解详情 →</span>
+      </a>
+      <a href="pages/industries/social.html" class="industry-card">
+        <div class="industry-icon">📱</div>
+        <h4 data-i18n="ind.social">海外社交平台</h4>
+        <p data-i18n="ind.social.desc">用户验证、账号安全、互动通知 — 支撑亿级用户的可靠通信</p>
+        <span class="industry-link" data-i18n="p.learn">了解详情 →</span>
+      </a>
+      <a href="pages/industries/logistics.html" class="industry-card">
+        <div class="industry-icon">🚚</div>
+        <h4 data-i18n="ind.logi">国际物流</h4>
+        <p data-i18n="ind.logi.desc">包裹追踪、签收确认、异常预警 — 端到端物流可视化</p>
+        <span class="industry-link" data-i18n="p.learn">了解详情 →</span>
+      </a>
+      <a href="pages/industries/gaming.html" class="industry-card">
+        <div class="industry-icon">🎮</div>
+        <h4 data-i18n="ind.game">游戏出海</h4>
+        <p data-i18n="ind.game.desc">用户召回、充值验证、活动推送 — 提升玩家留存与付费转化</p>
+        <span class="industry-link" data-i18n="p.learn">了解详情 →</span>
+      </a>
     </div>
   </div>
 </section>
@@ -657,66 +824,11 @@
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="#" class="logo"><div class="logo-icon">🔗</div><span class="logo-text">Omni<span>Connect</span></span></a>
-        <p data-i18n="ft.desc">企业级融合通信服务商，连接全球，智慧沟通。</p>
-        <div class="footer-social">
-          <a class="social-btn" href="#">💼</a>
-          <a class="social-btn" href="#">🐦</a>
-          <a class="social-btn" href="#">💬</a>
-          <a class="social-btn" href="#">📧</a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h5 data-i18n="ft.products">产品</h5>
-        <ul class="footer-links">
-          <li><a href="#" data-i18n="p.sms.name">企业短信</a></li>
-          <li><a href="#" data-i18n="p.voice.name">AI 语音机器人</a></li>
-          <li><a href="#" data-i18n="p.email.name">邮件群发</a></li>
-          <li><a href="#" data-i18n="p.wa.name">WhatsApp 商务</a></li>
-          <li><a href="#" data-i18n="p.iot.name">物联网卡</a></li>
-          <li><a href="#" data-i18n="p.roam.name">国际漫游流量包</a></li>
-          <li><a href="#ai-agents" data-i18n="ft.ai">AI 智能体</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5 data-i18n="ft.company">公司</h5>
-        <ul class="footer-links">
-          <li><a href="#" data-i18n="ft.about">关于我们</a></li>
-          <li><a href="#" data-i18n="ft.blog">博客</a></li>
-          <li><a href="#" data-i18n="ft.careers">加入我们</a></li>
-          <li><a href="#" data-i18n="ft.partners">合作伙伴</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5 data-i18n="ft.support">支持</h5>
-        <ul class="footer-links">
-          <li><a href="#" data-i18n="ft.docs">开发者文档</a></li>
-          <li><a href="#" data-i18n="ft.api">API 参考</a></li>
-          <li><a href="#" data-i18n="ft.status">服务状态</a></li>
-          <li><a href="#contact" data-i18n="ft.contact">联系我们</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p data-i18n="ft.copy">© 2026 OmniConnect. 保留所有权利。</p>
-      <div class="footer-badges">
-        <span class="badge badge-green">ISO 27001</span>
-        <span class="badge badge-green">SOC 2 Type II</span>
-        <span class="badge badge-blue">GDPR</span>
-        <span class="badge badge-blue">WhatsApp BSP</span>
-      </div>
-    </div>
-  </div>
-</footer>
 
 <script src="i18n.js"></script>
 <script src="main.js"></script>
 <div id="lingzhu-root"></div>
-<script src="chat-widget.js"></script>
+  <script src="template.js" data-depth="0"></script>
+  <script src="chat-widget.js"></script>
 </body>
 </html>

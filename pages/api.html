@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="api.title">API 接口文档</title>
+  <meta name="description" content="完善的 RESTful API，5 分钟快速接入" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans+Arabic:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .api-endpoint { background: var(--g900); border-radius: var(--r-md); padding: 24px; margin-bottom: 16px; }
+    .api-method { display: inline-block; background: var(--success); color: #fff; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 4px; margin-bottom: 12px; }
+    .api-path { font-family: 'SF Mono', 'Fira Code', monospace; color: var(--acc); font-size: 15px; margin-bottom: 8px; }
+    .api-desc { color: var(--g500); font-size: 14px; }
+  </style>
+</head>
+<body>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="container page-hero-inner">
+    <span class="section-tag light" data-i18n="api.sub">完善的 RESTful API，5 分钟快速接入</span>
+    <h1 data-i18n="api.title">API 接口文档</h1>
+    <p data-i18n="api.desc">OmniConnect 提供企业级 RESTful API，支持 SMS、WhatsApp、语音、邮件等多通道统一调用。</p>
+  </div>
+</section>
+
+<section class="page-content">
+  <div class="container">
+    <div class="info-blocks reveal">
+      <div class="info-block">
+        <div class="info-block-icon">🔐</div>
+        <div>
+          <h3 data-i18n="api.auth.title">认证方式</h3>
+          <p data-i18n="api.auth.desc">支持 API Key + Secret 签名认证与 OAuth 2.0 两种方式。所有请求通过 HTTPS 加密传输。</p>
+        </div>
+      </div>
+    </div>
+    <div class="api-endpoints reveal">
+      <div class="api-endpoint">
+        <span class="api-method">POST</span>
+        <div class="api-path">/v1/sms/send</div>
+        <p class="api-desc" data-i18n="api.sms.desc">发送单条/批量发送短信，支持模板变量、定时发送、状态回调。</p>
+      </div>
+      <div class="api-endpoint reveal">
+        <span class="api-method">POST</span>
+        <div class="api-path">/v1/whatsapp/send</div>
+        <p class="api-desc" data-i18n="api.wa.desc">发送文本、图片、文档、模板消息，支持交互式按钮与快速回复。</p>
+      </div>
+      <div class="api-endpoint reveal">
+        <span class="api-method">POST</span>
+        <div class="api-path">/v1/voice/call</div>
+        <p class="api-desc" data-i18n="api.voice.desc">发起 AI 语音外呼，支持 TTS 文本转语音、多轮对话流程配置。</p>
+      </div>
+      <div class="api-endpoint reveal">
+        <span class="api-method">POST</span>
+        <div class="api-path">/v1/email/send</div>
+        <p class="api-desc" data-i18n="api.email.desc">发送 HTML/纯文本邮件，支持模板变量、附件、批量发送。</p>
+      </div>
+    </div>
+    <div class="page-cta reveal">
+      <a href="#" class="btn-primary" data-i18n="api.cta">查看完整文档 →</a>
+    </div>
+    <div class="cross-links reveal">
+      <h4 data-i18n="cross.related">相关链接</h4>
+      <div class="cross-links-grid">
+        <a href="onboarding.html" data-i18n="onboard.title">开始接入</a>
+        <a href="solutions.html" data-i18n="solutions.title">获取方案</a>
+        <a href="sms.html" data-i18n="sms.title">企业短信</a>
+        <a href="../index.html" data-i18n="cross.home">返回首页</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="../i18n.js"></script>
+<script src="../main.js"></script>
+<script src="../template.js" data-depth="1"></script>
+<script src="../chat-widget.js"></script>
+</body>
+</html>
