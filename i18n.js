@@ -120,7 +120,14 @@ const I18N = {
     "ai.stat2.num":"60%","ai.stat2.label":"平均人力成本降低",
     "ai.stat3.num":"3x","ai.stat3.label":"业务处理效率提升",
     "ai.stat4.num":"7×24","ai.stat4.label":"不间断运营覆盖",
-    "ai.cta":"免费体验 AI 智能体 →"
+    "ai.cta":"免费体验 AI 智能体 →",
+    "tp.tag":"按量计价","tp.title":"透明·按需付费","tp.desc":"不想买套餐？按实际用量付费，用多少付多少，量大还可享阶梯折扣",
+    "tp.sms.name":"Global SMS","tp.sms.price":"$0.005","tp.sms.desc":"覆盖 150+ 国家，美国仅 $0.005/条",
+    "tp.wa.name":"WhatsApp API","tp.wa.price":"$0.02","tp.wa.desc":"营销/工具/服务/认证四类对话",
+    "tp.voice.name":"AI Voice","tp.voice.price":"$0.01","tp.voice.desc":"智能外呼+AI对话能力",
+    "tp.email.name":"Email","tp.email.price":"$0.08","tp.email.desc":"全球高送达率保障",
+    "tp.per":"/条起","tp.permin":"/分钟起","tp.perk":"/千封起",
+    "tp.note":"* 以上为参考指导价，量大可享阶梯折扣。最终报价以商务洽谈为准。"
   },
   en: {
     "nav.products":"Products","nav.why":"Why Us","nav.global":"Global",
@@ -240,7 +247,14 @@ const I18N = {
     "ai.stat2.num":"60%","ai.stat2.label":"Labor Cost Reduction",
     "ai.stat3.num":"3x","ai.stat3.label":"Process Efficiency Gain",
     "ai.stat4.num":"7×24","ai.stat4.label":"Always-On Coverage",
-    "ai.cta":"Try AI Agents Free →"
+    "ai.cta":"Try AI Agents Free →",
+    "tp.tag":"Per-Unit Pricing","tp.title":"Transparent · Pay as You Go","tp.desc":"Don't need a plan? Pay by actual usage — only for what you use, with volume discounts available.",
+    "tp.sms.name":"Global SMS","tp.sms.price":"$0.005","tp.sms.desc":"Covering 150+ countries, US from $0.005/msg",
+    "tp.wa.name":"WhatsApp API","tp.wa.price":"$0.02","tp.wa.desc":"Marketing/Utility/Service/Authentication conversations",
+    "tp.voice.name":"AI Voice","tp.voice.price":"$0.01","tp.voice.desc":"Smart outbound + AI conversation",
+    "tp.email.name":"Email","tp.email.price":"$0.08","tp.email.desc":"Global high-deliverability",
+    "tp.per":"/msg","tp.permin":"/min","tp.perk":"/1K",
+    "tp.note":"* Reference pricing. Volume discounts available. Final quote confirmed with sales team."
   },
   ar: {
     "nav.products":"المنتجات","nav.why":"لماذا نحن","nav.global":"التغطية العالمية",
@@ -360,7 +374,14 @@ const I18N = {
     "ai.stat2.num":"60%","ai.stat2.label":"خفض تكلفة العمالة",
     "ai.stat3.num":"3x","ai.stat3.label":"تحسين كفاءة العمليات",
     "ai.stat4.num":"7×24","ai.stat4.label":"تشغيل متواصل بلا انقطاع",
-    "ai.cta":"جرّب وكلاء الذكاء الاصطناعي مجاناً ←"
+    "ai.cta":"جرّب وكلاء الذكاء الاصطناعي مجاناً ←",
+    "tp.tag":"تسعير حسب الاستخدام","tp.title":"شفاف · ادفع حسب الاستخدام","tp.desc":"لا تحتاج باقة؟ ادفع حسب الاستخدام الفعلي — فقط ما تستخدمه، مع خصومات للكميات الكبيرة.",
+    "tp.sms.name":"الرسائل القصيرة","tp.sms.price":"$0.005","tp.sms.desc":"تغطية 150+ دولة، أمريكا من $0.005/رسالة",
+    "tp.wa.name":"واتساب","tp.wa.price":"$0.02","tp.wa.desc":"محادثات تسويق/خدمة/توثيق",
+    "tp.voice.name":"الصوت الذكي","tp.voice.price":"$0.01","tp.voice.desc":"اتصالات ذكية الخارج + محادثة ذكية",
+    "tp.email.name":"البريد","tp.email.price":"$0.08","tp.email.desc":"تسليم عالي عالمياً",
+    "tp.per":"/رسالة","tp.permin":"/دقيقة","tp.perk":"/ألف",
+    "tp.note":"* أسعار إرشادية. خصومات للكميات الكبيرة. السعر النهائي يؤكده فريق المبيعات."
   }
 };
 
