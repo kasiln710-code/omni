@@ -122,12 +122,12 @@ const I18N = {
     "ai.stat4.num":"7×24","ai.stat4.label":"不间断运营覆盖",
     "ai.cta":"免费体验 AI 智能体 →",
     "tp.tag":"按量计价","tp.title":"透明·按需付费","tp.desc":"不想买套餐？按实际用量付费，用多少付多少，量大还可享阶梯折扣",
-    "tp.sms.name":"Global SMS","tp.sms.price":"$0.005","tp.sms.desc":"覆盖 150+ 国家，美国仅 $0.005/条",
-    "tp.wa.name":"WhatsApp API","tp.wa.price":"$0.02","tp.wa.desc":"营销/工具/服务/认证四类对话",
-    "tp.voice.name":"AI Voice","tp.voice.price":"$0.01","tp.voice.desc":"智能外呼+AI对话能力",
-    "tp.email.name":"Email","tp.email.price":"$0.08","tp.email.desc":"全球高送达率保障",
+    "tp.sms.name":"Global SMS","tp.sms.price":"$0.0065","tp.sms.desc":"覆盖 150+ 国家，按国家定价","tp.sms.samples":"美国 $0.0065 · 印度 $0.008 · 新加坡 $0.02 · 中国 $0.045",
+    "tp.wa.name":"WhatsApp API","tp.wa.price":"$0.012","tp.wa.desc":"营销/工具/服务/认证四类对话，按区域定价",
+    "tp.voice.name":"AI Voice","tp.voice.price":"$0.015","tp.voice.desc":"智能外呼+AI对话能力，按区域定价",
+    "tp.email.name":"Email","tp.email.price":"$0.08","tp.email.desc":"全球高送达率保障，按量阶梯定价",
     "tp.per":"/条起","tp.permin":"/分钟起","tp.perk":"/千封起",
-    "tp.note":"* 以上为参考指导价，量大可享阶梯折扣。最终报价以商务洽谈为准。"
+    "tp.note":"* 以上为参考指导价。最终报价均以商务洽谈为准。"
   },
   en: {
     "nav.products":"Products","nav.why":"Why Us","nav.global":"Global",
@@ -249,10 +249,10 @@ const I18N = {
     "ai.stat4.num":"7×24","ai.stat4.label":"Always-On Coverage",
     "ai.cta":"Try AI Agents Free →",
     "tp.tag":"Per-Unit Pricing","tp.title":"Transparent · Pay as You Go","tp.desc":"Don't need a plan? Pay by actual usage — only for what you use, with volume discounts available.",
-    "tp.sms.name":"Global SMS","tp.sms.price":"$0.005","tp.sms.desc":"Covering 150+ countries, US from $0.005/msg",
-    "tp.wa.name":"WhatsApp API","tp.wa.price":"$0.02","tp.wa.desc":"Marketing/Utility/Service/Authentication conversations",
-    "tp.voice.name":"AI Voice","tp.voice.price":"$0.01","tp.voice.desc":"Smart outbound + AI conversation",
-    "tp.email.name":"Email","tp.email.price":"$0.08","tp.email.desc":"Global high-deliverability",
+    "tp.sms.name":"Global SMS","tp.sms.price":"$0.0065","tp.sms.desc":"200+ countries, priced by country","tp.sms.samples":"US $0.0065 · India $0.008 · Singapore $0.02 · China $0.045",
+    "tp.wa.name":"WhatsApp API","tp.wa.price":"$0.012","tp.wa.desc":"Marketing/Utility/Service/Auth, by region",
+    "tp.voice.name":"AI Voice","tp.voice.price":"$0.015","tp.voice.desc":"Smart outbound + AI conversation, by region",
+    "tp.email.name":"Email","tp.email.price":"$0.08","tp.email.desc":"Global high-deliverability, volume tiers",
     "tp.per":"/msg","tp.permin":"/min","tp.perk":"/1K",
     "tp.note":"* Reference pricing. Volume discounts available. Final quote confirmed with sales team."
   },
@@ -376,10 +376,10 @@ const I18N = {
     "ai.stat4.num":"7×24","ai.stat4.label":"تشغيل متواصل بلا انقطاع",
     "ai.cta":"جرّب وكلاء الذكاء الاصطناعي مجاناً ←",
     "tp.tag":"تسعير حسب الاستخدام","tp.title":"شفاف · ادفع حسب الاستخدام","tp.desc":"لا تحتاج باقة؟ ادفع حسب الاستخدام الفعلي — فقط ما تستخدمه، مع خصومات للكميات الكبيرة.",
-    "tp.sms.name":"الرسائل القصيرة","tp.sms.price":"$0.005","tp.sms.desc":"تغطية 150+ دولة، أمريكا من $0.005/رسالة",
-    "tp.wa.name":"واتساب","tp.wa.price":"$0.02","tp.wa.desc":"محادثات تسويق/خدمة/توثيق",
-    "tp.voice.name":"الصوت الذكي","tp.voice.price":"$0.01","tp.voice.desc":"اتصالات ذكية الخارج + محادثة ذكية",
-    "tp.email.name":"البريد","tp.email.price":"$0.08","tp.email.desc":"تسليم عالي عالمياً",
+    "tp.sms.name":"الرسائل القصيرة","tp.sms.price":"$0.0065","tp.sms.desc":"تغطية 200+ دولة، تسعير حسب الدولة","tp.sms.samples":"أمريكا $0.0065 · الهند $0.008 · سنغافورة $0.02 · الصين $0.045",
+    "tp.wa.name":"واتساب","tp.wa.price":"$0.012","tp.wa.desc":"تسويق/خدمة/توثيق، حسب المنطقة",
+    "tp.voice.name":"الصوت الذكي","tp.voice.price":"$0.015","tp.voice.desc":"اتصالات خارجية ذكية + محادثة ذكية، حسب المنطقة",
+    "tp.email.name":"البريد","tp.email.price":"$0.08","tp.email.desc":"تسليم عالي عالمياً، مستويات حجم",
     "tp.per":"/رسالة","tp.permin":"/دقيقة","tp.perk":"/ألف",
     "tp.note":"* أسعار إرشادية. خصومات للكميات الكبيرة. السعر النهائي يؤكده فريق المبيعات."
   }

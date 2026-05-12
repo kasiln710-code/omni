@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Elon Musk",
+    "companies": ["Tesla", "SpaceX", "xAI"],
+    "roles": ["CEO", "CTO"],
+    "watch_type": "executive"
+  },
+  {
+    "name": "Sam Altman",
+    "companies": ["OpenAI"],
+    "roles": ["CEO"],
+    "watch_type": "executive"
+  },
+  {
+    "name": "曾毓群",
+    "companies": ["宁德时代", "CATL"],
+    "roles": ["董事长", "CEO"],
+    "watch_type": "executive"
+  },
+  {
+    "name": "王传福",
+    "companies": ["比亚迪"],
+    "roles": ["董事长", "总裁"],
+    "watch_type": "executive"
+  }
+]

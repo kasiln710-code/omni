@@ -1,0 +1,60 @@
+{
+  "描述": "行业周报助理的定时任务配置，添加到 openclaw cron 中使用",
+  "说明": "将以下每条 cron job 通过 cron.add API 或 openclaw.json 添加到系统",
+  "jobs": [
+    {
+      "name": "weekly-news-search",
+      "schedule": { "kind": "cron", "expr": "0 8 * * 1-5", "tz": "Asia/Shanghai" },
+      "payload": {
+        "kind": "systemEvent",
+        "text": "行业周报助理: 执行 industry-news-search，扫描今日新闻"
+      },
+      "sessionTarget": "current"
+    },
+    {
+      "name": "weekly-policy-monitor",
+      "schedule": { "kind": "cron", "expr": "0 9 * * 1-5", "tz": "Asia/Shanghai" },
+      "payload": {
+        "kind": "systemEvent",
+        "text": "行业周报助理: 执行 policy-monitor，扫描政策动态"
+      },
+      "sessionTarget": "current"
+    },
+    {
+      "name": "weekly-talent-watch",
+      "schedule": { "kind": "cron", "expr": "0 10 * * 1-5", "tz": "Asia/Shanghai" },
+      "payload": {
+        "kind": "systemEvent",
+        "text": "行业周报助理: 执行 talent-watch，扫描人才动态"
+      },
+      "sessionTarget": "current"
+    },
+    {
+      "name": "weekly-supply-chain",
+      "schedule": { "kind": "cron", "expr": "0 11 * * 1", "tz": "Asia/Shanghai" },
+      "payload": {
+        "kind": "systemEvent",
+        "text": "行业周报助理: 执行 supply-chain-watch，整合供应链数据"
+      },
+      "sessionTarget": "current"
+    },
+    {
+      "name": "weekly-rnd-watch",
+      "schedule": { "kind": "cron", "expr": "0 12 * * 1-5", "tz": "Asia/Shanghai" },
+      "payload": {
+        "kind": "systemEvent",
+        "text": "行业周报助理: 执行 rnd-watch，扫描研发动态"
+      },
+      "sessionTarget": "current"
+    },
+    {
+      "name": "weekly-summarize",
+      "schedule": { "kind": "cron", "expr": "0 13 * * 5", "tz": "Asia/Shanghai" },
+      "payload": {
+        "kind": "systemEvent",
+        "text": "行业周报助理: 本周数据采集完成，执行 entity-dedup -> source-validation -> risk-scorer -> followup-tracker -> weekly-summarizer，生成周报"
+      },
+      "sessionTarget": "current"
+    }
+  ]
+}
