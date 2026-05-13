@@ -621,7 +621,13 @@ function switchLang(lang) {
   // apply translations
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
-    if (data[key] !== undefined) el.textContent = data[key];
+    if (data[key] !== undefined) {
+      if (el.tagName === 'META') {
+        el.setAttribute('content', data[key]);
+      } else {
+        el.textContent = data[key];
+      }
+    }
   });
 
   // price unit
